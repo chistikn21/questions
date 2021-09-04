@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.wrapper{
+    max-width: 1200px;
+    outline: 1px solid red;
+    margin: 25px auto;
+}
+
+.logo, .search, .nav_menu1 li, .nav_menu2 li, .nav_menu1, .nav_menu2{
+    display: inline-block;
+}
+
+.nav{
+    outline: 1px solid green;
+    line-height: 70px;
+    text-align: left;
+    margin-bottom: 120px;
+    font-size: 12px;
+    
+}
+
+.nav_menu2{
+   float: right;
+}
+
+.logo, .search{
+    float: left;
+}
+
+.logo{
+    margin-top: 60px;
+    border-radius: 50%;
+}
+
+.search{
+    width: 330px;
+    margin-top: 65px;
+    border: 2px solid #999;
+    border-radius: 5px;
+    line-height: 35px;
+    background-color: #f7f9fc;
+    text-align: left;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.search i{
+    color: #ccc;
+}
+
+.search input{
+    border: none;
+    outline: none;
+}
+
+.nav_menu1{
+    margin-left: 120px;
+}
+
+.nav_menu1 li{
+    margin-right: 40px;
+}
+
+.nav_menu1 a{
+    text-decoration: none;
+    color: #2e3a59;
+    text-transform: uppercase;
+}
+
+.nav_menu1 a:hover, .nav_menu1 a.active{
+    text-shadow: 0 0 3px #000;
+}
+
+.main{
+    /* включаем флэкс-выравнивание внутри блока main */
+     display: flex;
+    /*flex-direction: row; варианты из менения направления построения блоков внутри main */
+
+    /* выравнивание блоков в горизонте внутри main */
+    justify-content: space-evenly;
+
+    /* выравнивание блоков по вертикали внутри main */
+    align-items: center;
+
+    /* перебрасывает блоки на новую строку, если они не помещаются в ряду */
+    flex-wrap: wrap;
+}
+
+.card{
+    outline: 1px solid blue;
+    width: 250px;
+    /* margin: 2.5%; */
+    margin: 5px 15px 40px 15px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.test .card img{
+    border-radius: 50%;
+}
+
+.test .card{
+    overflow: hidden;
+}
+
+.picture{
+    width: 250px;
+    height: 250px;
+    outline: 1px solid rgb(186, 17, 158);
+    background-image: url('../img/Screenshot_1.jpg');
+    background-repeat: no-repeat;
+    background-size: 180%;
+    background-position: center;
+    border-radius: 50%;
+    margin: 15px auto;
+    transition: background-size .5s, opacity .5s .3s;
+    opacity: .4;
+}
+
+.picture:hover{
+    background-size: 250%;
+    opacity: 1;
+    
+}
